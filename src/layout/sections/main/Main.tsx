@@ -8,10 +8,7 @@ export const Main = () => {
   return (
     <StyledMain>
       <FlexWrapper justify={"space-around"}>
-        <FlexWrapper
-          direction={"column"}
-          padding={"150px 0px 0px 147px"}
-        >
+        <FlexWrapper direction={"column"} padding={"150px 0px 0px 147px"}>
           <TextWrapper
             fontFamily={"Poppins"}
             fontSize={"2rem"}
@@ -31,17 +28,9 @@ export const Main = () => {
             Преобразую идеи в современные и удобные решения!
           </TextWrapper>
         </FlexWrapper>
-        <FlexWrapper
-          display={"inline-block"}
-          padding={"125px 147px 0px 0px"}
-
-        >
-          <ImageWrapper
-            borderRadius={"55px 0px"}
-            src={photo}
-            alt="Моё фото"
-          />
-        </FlexWrapper>
+        <ImageDiv>
+          <ImageWrapper borderRadius={"55px 0px"} src={photo} alt="Моё фото" />
+        </ImageDiv>
       </FlexWrapper>
     </StyledMain>
   );
@@ -60,4 +49,15 @@ const Tittle = styled.h1`
   p {
     margin: 0;
   }
+`;
+
+const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 125px 147px 0px 0px;
+  width: 386px;
+  height: 456px;
+  border-radius: 55px 0px;
+  background: linear-gradient(to right, #202d7a 66.67%, #3f1d69 100%);
 `;

@@ -18,7 +18,6 @@ export const Social = () => {
 };
 const StyledSocial = styled.div`
   display: flex;
-  padding-top: 34px;
   justify-content: space-between;
   a > svg {
     display: flex;

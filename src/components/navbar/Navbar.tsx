@@ -11,11 +11,8 @@ export const Navbar = () => {
 };
 
 const StyledNav = styled.nav`
-  width: 412px;
-  height: 25px;
   display: flex;
-  justify-content: space-between;
-  padding-top: 37px;
+  gap:70px;
   a {
     text-decoration: none;
     color: white;
@@ -23,7 +20,7 @@ const StyledNav = styled.nav`
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 34px;
     text-align: left;
   }
 `;

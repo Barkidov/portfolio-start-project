@@ -54,8 +54,7 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-  width: 1440px;
-  height: 1779px;
+  max-width: 1440px;
   top: 800px;
   gap: 0px;
   border: 1px 0px 0px 0px;

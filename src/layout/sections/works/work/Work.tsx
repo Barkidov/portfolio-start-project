@@ -30,8 +30,7 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  width: 550px;
-  height: 670px;
+  max-width: 550px;
   border: solid 2px white;
   margin-bottom: 80px;
   border-radius: 55px 0px;
@@ -59,6 +58,7 @@ const Title = styled.h3`
 `;
 
 const Link = styled.a`
+  line-height: 120px;
   padding: 15px 30px 17px;
   text-decoration: none;
   font-size: 25px;

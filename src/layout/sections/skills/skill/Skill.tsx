@@ -12,10 +12,10 @@ export const Skill = (props: SkillPropsType) => {
   return (
     <StyledSkill>
       <Icon
-        width={"360"}
+        max-width={"360"}
         height={'400'}
         iconId={props.iconId}
-        viewBox={"-13 -100 150 250"}
+        viewBox={"-35 -100 150 250"}
         preserveAspectRatio={"xMidYMid meet"}
       />
       <SkillTittle>{props.title}</SkillTittle>
@@ -25,7 +25,7 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-  width: 25%;
+  max-width: 300px;
 `;
 
 const SkillTittle = styled.h3`

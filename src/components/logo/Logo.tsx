@@ -10,5 +10,5 @@ export const Logo = () => {
 };
 
 const StyledLogo = styled.a`
-    padding-top: 26px
+
 `

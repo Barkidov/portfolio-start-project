@@ -6,12 +6,14 @@ type IconPropsType = {
     height?: string;
     viewBox?: string;
     preserveAspectRatio?: string;
+    maxWidth?: string;
   };
   
   export const Icon = (props: IconPropsType) => {
     return (
       <svg
         width={props.width}
+        max-width={props.maxWidth}
         height={props.height}
         viewBox={props.viewBox}
         fill="none"
