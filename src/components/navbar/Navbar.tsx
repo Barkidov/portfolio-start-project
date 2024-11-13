@@ -17,7 +17,7 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   padding-top: 37px;
   a {
-    text-decoration: none !important;
+    text-decoration: none;
     color: white;
     cursor: pointer;
     font-family: Poppins;

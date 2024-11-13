@@ -34,8 +34,7 @@ const StyledWork = styled.div`
   height: 670px;
   border: solid 2px white;
   margin-bottom: 80px;
-  border-bottom-right-radius: 55px;
-  border-top-left-radius: 55px;
+  border-radius: 55px 0px;
 `;
 
 const Title = styled.h3`

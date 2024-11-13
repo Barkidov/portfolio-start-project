@@ -15,8 +15,8 @@ export const Header = () => {
 
 const StyledNavbar = styled.header`
   display: flex;
-  width: 1440px;
-  height: 100px;
+  max-width: 1440px;
+  min-height: 100px;
   justify-content: space-around;
   position: relative;
   background-color: #161d2a;

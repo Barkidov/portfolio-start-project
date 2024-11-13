@@ -33,14 +33,11 @@ export const Main = () => {
         </FlexWrapper>
         <FlexWrapper
           display={"inline-block"}
-          borderBottomRightRadius={"55px"}
-          borderTopLeftRadius={"55px"}
           padding={"125px 147px 0px 0px"}
 
         >
           <ImageWrapper
-            borderBottomRightRadius={"55px"}
-            borderTopLeftRadius={"55px"}
+            borderRadius={"55px 0px"}
             src={photo}
             alt="Моё фото"
           />

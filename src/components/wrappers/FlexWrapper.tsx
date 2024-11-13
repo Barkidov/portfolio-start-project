@@ -10,8 +10,7 @@ type FlexWrapperPropsType = {
   padding?: string;
   width?: string;
   height?: string;
-  borderBottomRightRadius?: string;
-  borderTopLeftRadius?: string;
+  borderRadius?: string;
   margin?: string
 };
 
@@ -23,8 +22,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   flex-wrap: ${(props) => props.wrap || "nowrap"};
   gap: ${(props) => props.gap || ""};
   padding: ${(props) => props.padding || "0px"};
-  border-bottom-right-radius: ${(props) => props.borderBottomRightRadius || ""};
-  border-top-left-radius: ${(props) => props.borderTopLeftRadius || ""};
+  border-radius: ${(props) => props.borderRadius || ""};
   margin: ${(props) => props.margin || ""};
   width: ${(props) => props.width || ""};
   height: ${(props) => props.height || ""};
