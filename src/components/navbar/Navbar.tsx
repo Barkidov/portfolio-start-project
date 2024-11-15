@@ -17,7 +17,6 @@ const StyledNav = styled.nav`
     text-decoration: none;
     color: white;
     cursor: pointer;
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
     line-height: 34px;

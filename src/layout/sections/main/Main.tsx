@@ -7,10 +7,9 @@ import { ImageWrapper } from "../../../components/wrappers/ImageWrapper";
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper justify={"space-around"}>
-        <FlexWrapper direction={"column"} padding={"150px 0px 0px 147px"}>
+      <FlexWrapper justify={"space-between"}>
+        <FlexWrapper direction={"column"} padding={"210px 0px 0px 130px"}>
           <TextWrapper
-            fontFamily={"Poppins"}
             fontSize={"2rem"}
             fontWeight={"500"}
           >
@@ -21,7 +20,6 @@ export const Main = () => {
             <p>Я Frontend Developer</p>
           </Tittle>
           <TextWrapper
-            fontFamily={"Poppins"}
             fontSize={"1.8rem"}
             fontWeight={"500"}
           >
@@ -38,24 +36,23 @@ export const Main = () => {
 
 const StyledMain = styled.section`
   height: 700px;
+  p {
+    line-height: 2
+  }
 `;
 
 const Tittle = styled.h1`
-  font-family: Poppins;
   font-size: 45px;
   font-weight: 600;
   line-height: 65px;
   margin-bottom: 0px;
-  p {
-    margin: 0;
-  }
 `;
 
 const ImageDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 125px 147px 0px 0px;
+  margin: 125px 130px 0px 0px;
   width: 386px;
   height: 456px;
   border-radius: 55px 0px;

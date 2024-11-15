@@ -19,5 +19,5 @@ const StyledNavbar = styled.header`
   justify-content: space-around;
   position: relative;
   background-color: #161d2a;
-  padding-top: 20px;
+  padding-top: 30px;
 `;

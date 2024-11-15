@@ -15,7 +15,7 @@ export const Work = (props: WorkPropsType) => {
       <ImageWrapper
         borderRadius={"55px"}
         padding={"25px"}
-        width={"500px"}
+        width={"100%"}
         height={"280px"}
         src={props.src}
         alt="Первый проект"
@@ -30,10 +30,15 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 550px;
   border: solid 2px white;
   margin-bottom: 80px;
   border-radius: 55px 0px;
+  box-sizing: border-box;
+  max-height: 650px;
 `;
 
 const Title = styled.h3`
@@ -58,13 +63,13 @@ const Title = styled.h3`
 `;
 
 const Link = styled.a`
-  line-height: 120px;
-  padding: 15px 30px 17px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  margin: 20px;
-  border-radius: 55px;
+color: white;
+font-size: 25px;
+line-height: 5rem;
+text-align: center;
+width: 200px;
+margin: 20px;
+border-radius: 55px;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
 
   &:hover {

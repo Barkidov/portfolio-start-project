@@ -13,13 +13,23 @@ export const Skill = (props: SkillPropsType) => {
     <StyledSkill>
       <Icon
         max-width={"360"}
-        height={'400'}
+        height={"400"}
         iconId={props.iconId}
         viewBox={"-35 -100 150 250"}
         preserveAspectRatio={"xMidYMid meet"}
       />
       <SkillTittle>{props.title}</SkillTittle>
-      <TextWrapper fontSize={'1.2rem'} fontFamily={'Poppins'} padding={'30px'} textAlign={"center"}>{props.text}</TextWrapper>
+      <TextWrapper
+        lang="ru"
+        fontSize={"1.2rem"}
+        padding={"30px"}
+        textAlign={"justify"}
+        lineHeight={"1.2"}
+        overflowWrap={"break-word"}
+        hyphens={"auto"}
+      >
+        {props.text}
+      </TextWrapper>
     </StyledSkill>
   );
 };
@@ -32,5 +42,4 @@ const SkillTittle = styled.h3`
   text-align: center;
   font-size: 1.5rem;
   margin: 0;
-  font-family: Poppins;
 `;

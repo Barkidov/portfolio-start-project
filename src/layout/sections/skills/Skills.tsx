@@ -47,5 +47,5 @@ const StyleSkills = styled.section`
   /* height: 1065px; */
   background-color: #161d2a;
   padding-left: 30px;
-  padding-right: 30px
+  padding-right: 30px;
 `;
