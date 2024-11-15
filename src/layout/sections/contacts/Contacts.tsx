@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { SectionTittle } from "../../../components/SectionTittle";
 import { FlexWrapper } from "../../../components/wrappers/FlexWrapper";
+import { theme } from "../../../styles/Theme";
 
 export const Contacts = () => {
   return (
@@ -22,10 +23,9 @@ export const Contacts = () => {
   );
 };
 
-
 const StyledContacts = styled.section`
-  height: 600px;
-  background-color: #161d2a;
+  min-height: 600px;
+  background-color: ${theme.colors.secondaryBg};
 `;
 
 const StyledForm = styled.form`
@@ -47,17 +47,11 @@ const Button = styled.button`
   border: none;
   padding: 18px 30px;
   font-size: 25px;
-  color: white;
   border-radius: 55px;
-  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  background: ${theme.colors.backgroundButtonsGradientColor};
 
   &:hover {
     cursor: pointer;
-    background: linear-gradient(
-      270deg,
-      #066475 0%,
-      #202d7a 66.67%,
-      #3f1d69 100%
-    );
+    background: ${theme.colors.backgroundButtonsHoverGradientColor};
   }
 `;

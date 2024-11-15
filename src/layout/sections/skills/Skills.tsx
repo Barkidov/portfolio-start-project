@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/wrappers/FlexWrapper";
 import { SectionTittle } from "../../../components/SectionTittle";
 import { Skill } from "./skill/Skill";
+import { theme } from "../../../styles/Theme";
 
 export const Skills = () => {
   return (
@@ -44,8 +45,8 @@ export const Skills = () => {
 };
 
 const StyleSkills = styled.section`
-  /* height: 1065px; */
-  background-color: #161d2a;
+  min-height: 1065px;
+  background-color: ${theme.colors.secondaryBg};
   padding-left: 30px;
   padding-right: 30px;
 `;

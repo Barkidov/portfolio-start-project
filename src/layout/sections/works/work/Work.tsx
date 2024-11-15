@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ImageWrapper } from "../../../../components/wrappers/ImageWrapper";
 import { TextWrapper } from "../../../../components/wrappers/TextWrapper";
+import { theme } from "../../../../styles/Theme";
 
 type WorkPropsType = {
   title: string;
@@ -51,34 +52,23 @@ const Title = styled.h3`
     display: block;
     width: 60%;
     height: 2px;
-    background: linear-gradient(
-      270deg,
-      #13adc7 0%,
-      #6978d1 66.67%,
-      #945dd6 100%
-    );
+    background: ${theme.colors.backgroundButtonsGradientColor};
     margin: 0 auto;
     margin-top: 30px;
   }
 `;
 
 const Link = styled.a`
-color: white;
-font-size: 25px;
-line-height: 5rem;
-text-align: center;
-width: 200px;
-margin: 20px;
-border-radius: 55px;
-  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  font-size: 25px;
+  line-height: 4rem;
+  text-align: center;
+  max-width: 183px;
+  margin: 20px;
+  border-radius: 55px;
+  background: ${theme.colors.backgroundButtonsGradientColor};
 
   &:hover {
     cursor: pointer;
-    background: linear-gradient(
-      270deg,
-      #066475 0%,
-      #202d7a 66.67%,
-      #3f1d69 100%
-    );
+    background: ${theme.colors.backgroundButtonsHoverGradientColor};
   }
 `;

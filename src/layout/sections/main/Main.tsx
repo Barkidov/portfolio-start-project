@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import photo from "../../../assets/images/photo.webp";
+import photo from "../../../assets/images/photoOrigin.webp";
 import { FlexWrapper } from "../../../components/wrappers/FlexWrapper";
 import { TextWrapper } from "../../../components/wrappers/TextWrapper";
 import { ImageWrapper } from "../../../components/wrappers/ImageWrapper";
@@ -8,7 +8,7 @@ export const Main = () => {
   return (
     <StyledMain>
       <FlexWrapper justify={"space-between"}>
-        <FlexWrapper direction={"column"} padding={"210px 0px 0px 130px"}>
+        <FlexWrapper direction={"column"} padding={"180px 0px 0px 130px"}>
           <TextWrapper
             fontSize={"2rem"}
             fontWeight={"500"}
@@ -22,6 +22,7 @@ export const Main = () => {
           <TextWrapper
             fontSize={"1.8rem"}
             fontWeight={"500"}
+            maxWidth={'700px'}
           >
             Преобразую идеи в современные и удобные решения!
           </TextWrapper>
@@ -35,7 +36,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-  height: 700px;
+  min-height: 700px;
   p {
     line-height: 2
   }

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "./Theme";
 
 export const GlobalStyles = createGlobalStyle`
 *,
@@ -18,9 +19,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     ;
-    color: white;
-    background-color: rgba(15, 22, 36, 1);
-    }
+    color: ${theme.colors.textColor};
+    background-color: ${theme.colors.primaryBg}
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -29,6 +30,7 @@ code {
 
 a {
     text-decoration: none;
+    color: ${theme.colors.textColor}
 }
 
 ul {
@@ -37,6 +39,7 @@ ul {
 
 button {
     background-color: unset;
-    border: none
+    border: none;
+    color: ${theme.colors.textColor}
 }
 `;
