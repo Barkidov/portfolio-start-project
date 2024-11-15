@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.bc7fd0ad.css","mappings":"AAAA,KAEE,wBAAqC,CADrC,gBAEF","sources":["App.css"],"sourcesContent":[".App {\r\n  max-width: 1440px;\r\n  background-color: rgba(15, 22, 36, 1);\r\n}\r\n"],"names":[],"sourceRoot":""}
