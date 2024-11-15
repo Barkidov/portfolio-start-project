@@ -22,6 +22,7 @@ export const Contacts = () => {
   );
 };
 
+
 const StyledContacts = styled.section`
   height: 600px;
   background-color: #161d2a;
