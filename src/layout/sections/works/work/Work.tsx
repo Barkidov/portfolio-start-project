@@ -34,7 +34,7 @@ const StyledWork = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 550px;
+  max-width: 400px;
   border: solid 2px white;
   margin-bottom: 80px;
   border-radius: 55px 0px;

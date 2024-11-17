@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { initialState } from "../../features/initialState";
 import { theme } from "../../styles/Theme";
+import { Container } from "../Container";
 
 const menubar = initialState.menubar;
 
@@ -33,9 +34,26 @@ const StyledNav = styled.nav`
     font-weight: 500;
     line-height: 34px;
     text-align: left;
+    position: relative;
 
     &:hover {
-      color: ${theme.colors.textHoverColor}
+      color: #00c3ff
+    }
+
+    ::after {
+      content: "";
+      position: absolute;
+      background: ${theme.colors.backgroundButtonsGradientColor};
+      height: 3px;
+      width: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+      transition: 0.1s;
+    }
+
+    :hover::after {
+      width: 100%;
     }
   }
 `;

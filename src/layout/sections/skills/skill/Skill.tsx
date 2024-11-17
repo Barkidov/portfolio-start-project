@@ -3,6 +3,7 @@ import { Icon } from "../../../../components/icon/Icon";
 import { TextWrapper } from "../../../../components/wrappers/TextWrapper";
 
 type SkillPropsType = {
+  key: string;
   iconId: string;
   title: string;
   text: string;
@@ -15,7 +16,7 @@ export const Skill = (props: SkillPropsType) => {
         max-width={"360"}
         height={"400"}
         iconId={props.iconId}
-        viewBox={"-35 -100 150 250"}
+        viewBox={"-25-50 150 220"}
         preserveAspectRatio={"xMidYMid meet"}
       />
       <SkillTittle>{props.title}</SkillTittle>

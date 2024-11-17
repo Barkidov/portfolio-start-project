@@ -5,7 +5,7 @@ type TextWrapperPropsType = {
   fontWeight?: string;
   paddingTop?: string;
   lineHeight?: string;
-  children?: string;
+  children?: string | React.ReactNode;
   textAlign?: string;
   padding?: string;
   overflowWrap?: string;
