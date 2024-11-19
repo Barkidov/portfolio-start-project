@@ -26,13 +26,13 @@ export const Main = () => {
               Преобразую идеи в современные и удобные решения!
             </TextWrapper>
           </FlexWrapper>
-          <ImageDiv>
-            <ImageWrapper
-              borderRadius={"55px 0px"}
-              src={photo}
-              alt="Моё фото"
-            />
-          </ImageDiv>
+            <ImageDiv>
+              <ImageWrapper
+                borderRadius={"55px 0px"}
+                src={photo}
+                alt="Моё фото"
+              />
+            </ImageDiv>
         </FlexWrapper>
       </Container>
     </StyledMain>
@@ -42,8 +42,21 @@ export const Main = () => {
 const StyledMain = styled.section`
   padding-top: 100px;
   min-height: 810px;
+  position: relative;
   p {
     line-height: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 666px;
+    height: 666px;
+    /* background-color: red; */
+    background-image: url('../../../assets/images/drawing.png');
+    z-index: -1;
   }
 `;
 
