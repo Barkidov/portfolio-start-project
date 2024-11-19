@@ -12,13 +12,13 @@ export const Contacts = () => {
           Контакты
         </SectionTittle>
         <FlexWrapper justify={"center"}>
-          <StyledForm>
-            <Field placeholder="Имя" />
-            <Field placeholder="Тема" />
-            <Field placeholder="Сообщение" as="textarea" />
-            <FlexWrapper justify={"center"} padding={"15px"}>
-              <Button>Отправить</Button>
-            </FlexWrapper>
+          <StyledForm method="get">
+              <Field id="contactsForm" name='name' placeholder="Имя" />
+              <Field id="contactsForm" name='subject of the message' placeholder="Тема сообщения" />
+              <Field id="contactsForm" name='message' placeholder="Сообщение" as="textarea" />
+              <FlexWrapper justify={"center"} padding={"15px"}>
+                <Button id="contactsForm">Отправить</Button>
+              </FlexWrapper>
           </StyledForm>
         </FlexWrapper>
       </Container>
@@ -45,13 +45,15 @@ const StyledForm = styled.form`
   }
 `;
 
+
+
 const Field = styled.input`
   font-family: "Poppins", "sans serif";
   width: 100%;
-  padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  padding: 10px;
 `;
 
 const Button = styled.button`
