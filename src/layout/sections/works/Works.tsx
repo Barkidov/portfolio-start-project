@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import { SectionTittle } from "../../../components/SectionTittle";
-import { FlexWrapper } from "../../../components/wrappers/FlexWrapper";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { Work } from "./work/Work";
 import { Container } from "../../../components/Container";
 import { initialState } from "../../../features/initialState";
 
-const works = initialState.works;
+const worksData = initialState.works;
 
 export const Works = () => {
   return (
     <StyledWorks id="works">
       <Container>
-        <SectionTittle textAlign={"center"} padding={"100px 0px 100px"}>
+        <SectionTitle textAlign={"center"} padding={"100px 0px 100px"}>
           Мои проекты
-        </SectionTittle>
+        </SectionTitle>
         <FlexWrapper justify={"space-around"} wrap={"wrap"} margin={'0 0 10px'}>
-          {works.map((work) => {
+          {worksData.map((work) => {
             return (
               <Work
                 key={work.id}

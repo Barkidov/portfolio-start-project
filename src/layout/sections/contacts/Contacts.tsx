@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { SectionTittle } from "../../../components/SectionTittle";
-import { FlexWrapper } from "../../../components/wrappers/FlexWrapper";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { theme } from "../../../styles/Theme";
 import { Container } from "../../../components/Container";
 
@@ -8,17 +8,34 @@ export const Contacts = () => {
   return (
     <StyledContacts id="contacts">
       <Container>
-        <SectionTittle padding={"100px 0px 90px"} textAlign={"center"}>
+        <SectionTitle padding={"100px 0px 90px"} textAlign={"center"}>
           Контакты
-        </SectionTittle>
+        </SectionTitle>
         <FlexWrapper justify={"center"}>
           <StyledForm method="get">
-              <Field id="contactsForm" name='name' placeholder="Имя" />
-              <Field id="contactsForm" name='subject of the message' placeholder="Тема сообщения" />
-              <Field id="contactsForm" name='message' placeholder="Сообщение" as="textarea" />
-              <FlexWrapper justify={"center"} padding={"15px"}>
-                <Button id="contactsForm">Отправить</Button>
-              </FlexWrapper>
+            <Field
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <Field
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            />
+            <Field
+              id="message"
+              name="message"
+              placeholder="Message"
+              as="textarea"
+              required
+            />
+            <FlexWrapper justify={"center"} padding={"15px"}>
+              <Button type="submit">Отправить</Button>
+            </FlexWrapper>
           </StyledForm>
         </FlexWrapper>
       </Container>
@@ -45,8 +62,6 @@ const StyledForm = styled.form`
   }
 `;
 
-
-
 const Field = styled.input`
   font-family: "Poppins", "sans serif";
   width: 100%;
@@ -54,12 +69,15 @@ const Field = styled.input`
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
+  background-color: ${theme.colors.primaryBg};
+  color: white;
 `;
 
 const Button = styled.button`
   border: none;
+  font-weight: 700;
   padding: 18px 30px;
-  font-size: 25px;
+  font-size: 1.2rem;
   border-radius: 55px;
   background: ${theme.colors.backgroundButtonsGradientColor};
 

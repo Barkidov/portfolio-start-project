@@ -20,10 +20,10 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   justify-content: ${(props) => props.justify || "flex-start"};
   align-items: ${(props) => props.align || "stretch"};
   flex-wrap: ${(props) => props.wrap || "nowrap"};
-  gap: ${(props) => props.gap || ""};
-  padding: ${(props) => props.padding || "0px"};
-  border-radius: ${(props) => props.borderRadius || ""};
-  margin: ${(props) => props.margin || ""};
-  width: ${(props) => props.width || ""};
-  height: ${(props) => props.height || ""};
+  gap: ${(props) => props.gap || "undefined"};
+  padding: ${(props) => props.padding || "0"};
+  border-radius: ${(props) => props.borderRadius || "undefined"};
+  margin: ${(props) => props.margin || "undefined"};
+  width: ${(props) => props.width || "undefined"};
+  height: ${(props) => props.height || "undefined"};
 `;

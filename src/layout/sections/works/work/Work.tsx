@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ImageWrapper } from "../../../../components/wrappers/ImageWrapper";
-import { TextWrapper } from "../../../../components/wrappers/TextWrapper";
 import { theme } from "../../../../styles/Theme";
+import { Text } from "../../../../components/Text";
+import { Image } from "../../../../components/Image";
 
 type WorkPropsType = {
   title: string;
@@ -13,7 +13,7 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
   return (
     <StyledWork>
-      <ImageWrapper
+      <Image
         borderRadius={"55px"}
         padding={"25px"}
         width={"100%"}
@@ -22,10 +22,10 @@ export const Work = (props: WorkPropsType) => {
         alt="Первый проект"
       />
       <Title>{props.title}</Title>
-      <TextWrapper padding={"20px"} fontSize={"20px"}>
+      <Text padding={"20px"} fontSize={"20px"}>
         {props.text}
-      </TextWrapper>
-      <Link href={props.href}>На проект</Link>
+      </Text>
+      <Link href={props.href}>Проект</Link>
     </StyledWork>
   );
 };
@@ -59,7 +59,8 @@ const Title = styled.h3`
 `;
 
 const Link = styled.a`
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 1.2rem;
   line-height: 4rem;
   text-align: center;
   max-width: 183px;

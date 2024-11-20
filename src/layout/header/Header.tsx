@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
 import { Navbar } from "../../components/navbar/Navbar";
-import { Social } from "../../components/social/Social";
 import { theme } from "../../styles/Theme";
 import { Container } from "../../components/Container";
-import { FlexWrapper } from "../../components/wrappers/FlexWrapper";
+import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
+import { Socials } from "../../components/social/Socials";
 
 export const Header = () => {
   return (
@@ -13,7 +13,7 @@ export const Header = () => {
         <FlexWrapper justify={"space-around"}>
           <Logo />
           <Navbar />
-          <Social />
+          <Socials />
         </FlexWrapper>
       </Container>
     </StyledNavbar>

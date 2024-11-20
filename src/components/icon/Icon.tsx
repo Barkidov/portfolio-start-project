@@ -1,4 +1,4 @@
-import iconsSprite from "../../assets/images/iconsColor-sprite.svg";
+import iconsSprite from "../../assets/images/icons-sprite.svg";
 
 type IconPropsType = {
     iconId: string;

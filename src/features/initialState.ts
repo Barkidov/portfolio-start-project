@@ -88,5 +88,22 @@ export const initialState = {
       href: "#",
     },
   ],
+  socials: [
+    {
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      href: "https://github.com/Barkidov",
+      iconId: "github",
+    },
+    {
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      href: "https://web.telegram.org",
+      iconId: "telegram",   
+    },
+    {
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      href: "https://web.whatsapp.com",
+      iconId: "whatsapp",   
+    },
+  ]
 };
 

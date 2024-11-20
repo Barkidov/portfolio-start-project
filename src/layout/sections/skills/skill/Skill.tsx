@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
-import { TextWrapper } from "../../../../components/wrappers/TextWrapper";
+import { Text } from "../../../../components/Text";
 
 type SkillPropsType = {
   key: string;
@@ -13,34 +13,38 @@ export const Skill = (props: SkillPropsType) => {
   return (
     <StyledSkill>
       <Icon
-        max-width={"360"}
-        height={"400"}
+        width={"200"}
+        height={"200"}
         iconId={props.iconId}
-        viewBox={"-25-50 150 220"}
-        preserveAspectRatio={"xMidYMid meet"}
       />
       <SkillTittle>{props.title}</SkillTittle>
-      <TextWrapper
-        lang="ru"
-        fontSize={"1.2rem"}
-        padding={"30px"}
-        textAlign={"justify"}
-        lineHeight={"1.2"}
-        overflowWrap={"break-word"}
-        hyphens={"auto"}
+      <Text
+        textAlign={"center"}
+        lineHeight={"1.5"}
       >
         {props.text}
-      </TextWrapper>
+      </Text>
     </StyledSkill>
   );
 };
 
 const StyledSkill = styled.div`
-  max-width: 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  & svg {
+    display: block;
+    margin: 0 auto;
+  }
 `;
 
 const SkillTittle = styled.h3`
-  text-align: center;
   font-size: 1.5rem;
-  margin: 0;
+  margin: 0 auto;
+  padding: 20px 0 20px
 `;
+

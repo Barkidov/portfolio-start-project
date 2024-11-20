@@ -3,20 +3,22 @@ import { initialState } from "../../features/initialState";
 import { theme } from "../../styles/Theme";
 import { Container } from "../Container";
 
-const menubar = initialState.menubar;
+const menubarData = initialState.menubar;
 
 export const Navbar = () => {
   return (
     <StyledNav>
-      <ul>
-        {menubar.map((menuItem) => {
-          return (
-            <li key={menuItem.id}>
-              <a href={menuItem.href}>{menuItem.name}</a>
-            </li>
-          );
-        })}
-      </ul>
+      <Container>
+        <ul>
+          {menubarData.map((menuItem) => {
+            return (
+              <li key={menuItem.id}>
+                <a href={menuItem.href}>{menuItem.name}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </Container>
     </StyledNav>
   );
 };
@@ -37,7 +39,7 @@ const StyledNav = styled.nav`
     position: relative;
 
     &:hover {
-      color: #00c3ff
+      color: #00c3ff;
     }
 
     ::after {

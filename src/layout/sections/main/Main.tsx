@@ -1,38 +1,27 @@
 import styled from "styled-components";
 import photo from "../../../assets/images/photoOrigin.webp";
-import { FlexWrapper } from "../../../components/wrappers/FlexWrapper";
-import { TextWrapper } from "../../../components/wrappers/TextWrapper";
-import { ImageWrapper } from "../../../components/wrappers/ImageWrapper";
+import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { Container } from "../../../components/Container";
+import { Image } from "../../../components/Image";
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
         <FlexWrapper justify={"space-evenly"}>
-          <FlexWrapper direction={"column"} padding={"180px 0px 0px 0px"}>
-            <TextWrapper fontSize={"2rem"} fontWeight={"500"}>
+          <FlexWrapper direction={"column"} padding={"200px 0px 0px 0px"}>
+            <span>
               <Hand>👋</Hand> Всем привет!
-            </TextWrapper>
-            <Tittle>
-              <p>Меня зовут Анзор</p>
-              <p>Я Frontend Developer</p>
-            </Tittle>
-            <TextWrapper
-              fontSize={"1.8rem"}
-              fontWeight={"500"}
-              maxWidth={"700px"}
-            >
-              Преобразую идеи в современные и удобные решения!
-            </TextWrapper>
+            </span>
+            <h1>
+              <span>Меня зовут Анзор</span><br />
+              <span>Я Frontend Developer</span>
+            </h1>
+            <span>Преобразую идеи в современные и удобные решения!</span>
           </FlexWrapper>
-            <ImageDiv>
-              <ImageWrapper
-                borderRadius={"55px 0px"}
-                src={photo}
-                alt="Моё фото"
-              />
-            </ImageDiv>
+          <ImageWrapper>
+            <Image borderRadius={"55px 0px"} src={photo} alt="Моё фото" />
+          </ImageWrapper>
         </FlexWrapper>
       </Container>
     </StyledMain>
@@ -43,8 +32,15 @@ const StyledMain = styled.section`
   padding-top: 100px;
   min-height: 810px;
   position: relative;
-  p {
+
+  h1 > span {
+    font-size: 2rem;
+  }
+
+  span {
+    display: inline-block;
     line-height: 2;
+    font-size: 1.2rem;
   }
 
   &::after {
@@ -55,19 +51,13 @@ const StyledMain = styled.section`
     width: 666px;
     height: 666px;
     /* background-color: red; */
-    background-image: url('../../../assets/images/drawing.png');
+    background-image: url("../../../assets/images/drawing.png");
     z-index: -1;
   }
 `;
 
-const Tittle = styled.h1`
-  font-size: 45px;
-  font-weight: 600;
-  line-height: 65px;
-  margin-bottom: 0px;
-`;
 
-const ImageDiv = styled.div`
+const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +68,7 @@ const ImageDiv = styled.div`
   background: linear-gradient(to right, #202d7a 66.67%, #3f1d69 100%);
 `;
 
-const Hand = styled.div`
+const Hand = styled.span`
   padding-right: 10px;
   display: inline-block;
   animation: moveHand 2s 2;

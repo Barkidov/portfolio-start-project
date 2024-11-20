@@ -10,6 +10,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     display: flex;
     justify-content: center;
