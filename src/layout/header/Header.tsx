@@ -5,6 +5,7 @@ import { theme } from "../../styles/Theme";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
 import { Socials } from "../../components/social/Socials";
+import { BurgerMenu } from "../../components/navbar/BurgerMenu";
 
 export const Header = () => {
   return (
@@ -14,6 +15,7 @@ export const Header = () => {
           <Logo />
           <Navbar />
           <Socials />
+          <BurgerMenu/>
         </FlexWrapper>
       </Container>
     </StyledNavbar>

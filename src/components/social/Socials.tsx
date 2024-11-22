@@ -1,12 +1,14 @@
 import { Icon } from "../icon/Icon";
 import { Social } from "./Social";
 import { initialState } from "../../features/initialState";
+import styled from "styled-components";
+import { theme } from "../../styles/Theme";
 
 const socialData = initialState.socials;
 
 export const Socials = () => {
   return (
-    <div>
+    <SocialsStyled>
       {socialData.map((social) => {
         return (
           <Social key={social.id} href={social.href}>
@@ -14,8 +16,20 @@ export const Socials = () => {
           </Social>
         );
       })}
-    </div>
+    </SocialsStyled>
   );
 };
 
+const SocialsStyled = styled.div`
+  @media ${theme.media.tablet} {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+  }
 
+  @media ${theme.media.mobile} {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+  }
+`;

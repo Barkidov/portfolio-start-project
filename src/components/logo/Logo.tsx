@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
+import { theme } from "../../styles/Theme";
 
 export const Logo = () => {
   return (
@@ -10,5 +11,16 @@ export const Logo = () => {
 };
 
 const StyledLogo = styled.a`
+  @media ${theme.media.tablet} {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+  }
 
+  @media ${theme.media.mobile} {
+    top: 5px;
+    left: 5px;
+    width: 100px;
+  }
 `;

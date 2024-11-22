@@ -58,4 +58,9 @@ const StyledNav = styled.nav`
       width: 100%;
     }
   }
+
+  @media ${theme.media.tablet} {
+    display: none
+  }
 `;
+  
