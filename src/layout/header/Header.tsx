@@ -15,7 +15,7 @@ export const Header = () => {
           <Logo />
           <Navbar />
           <Socials />
-          <BurgerMenu/>
+          <BurgerMenu />
         </FlexWrapper>
       </Container>
     </StyledNavbar>
@@ -23,13 +23,18 @@ export const Header = () => {
 };
 
 const StyledNavbar = styled.header`
-  padding: 30px 0 20px;
+  height: 80px;
   display: flex;
   justify-content: center;
-  background-color: ${theme.colors.secondaryBg};
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
+
+  div:first-child {
+    background-color: ${theme.colors.secondaryBg};
+    height: 100%;
+    padding: 10px 0 5px;
+  }
 `;

@@ -8,7 +8,6 @@ const menubarData = initialState.menubar;
 export const Navbar = () => {
   return (
     <StyledNav>
-      <Container>
         <ul>
           {menubarData.map((menuItem) => {
             return (
@@ -18,7 +17,6 @@ export const Navbar = () => {
             );
           })}
         </ul>
-      </Container>
     </StyledNav>
   );
 };
