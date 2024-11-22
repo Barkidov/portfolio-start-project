@@ -6,7 +6,6 @@ import { theme } from "../../styles/Theme";
 const menubarData = initialState.menubar;
 
 export const BurgerMenu = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleBurgerMenuOpen = () => {
@@ -15,7 +14,7 @@ export const BurgerMenu = () => {
 
   return (
     <>
-      <BurgerButton onClick={handleBurgerMenuOpen}>X</BurgerButton>
+      <BurgerButton onClick={handleBurgerMenuOpen}>=</BurgerButton>
       <BurgerMenuStyled>
         {isOpen && (
           <ul>
@@ -36,17 +35,47 @@ export const BurgerMenu = () => {
 const BurgerMenuStyled = styled.div`
   @media ${theme.media.tablet} {
     position: absolute;
-    top: 100px;
-    right: 650px;
+    top: 10px;
+    right: 40px;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      position: relative;
+
+      &:active {
+        color: #00c3ff;
+      }
+
+      ::after {
+        content: "";
+        position: absolute;
+        background: ${theme.colors.backgroundButtonsGradientColor};
+        height: 3px;
+        width: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5px;
+        transition: 0.1s;
+      }
+
+      :hover::after {
+        width: 100%;
+      }
+    }
   }
 `;
 const BurgerButton = styled.button`
+  font-size: 40px;
   @media ${theme.media.tablet} {
     position: absolute;
-    top: 10px;
-    right: 600px;
+    top: 0px;
+    right: 10px;
   }
-  /* @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
-  } */
+  }
 `;

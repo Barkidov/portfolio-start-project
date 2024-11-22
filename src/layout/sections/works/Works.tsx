@@ -34,7 +34,6 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
   min-height: 1400px;
-  max-width: 1440px;
   top: 800px;
   gap: 0px;
   border: 1px 0px 0px 0px;

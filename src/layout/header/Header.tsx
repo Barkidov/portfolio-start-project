@@ -23,12 +23,13 @@ export const Header = () => {
 };
 
 const StyledNavbar = styled.header`
-  min-width: 1170px;
   padding: 30px 0 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: ${theme.colors.secondaryBg};
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 9;
 `;
