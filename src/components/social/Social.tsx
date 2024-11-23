@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../styles/Theme";
 
 type SocialPropsType = {
   href?: string;
@@ -16,10 +17,19 @@ export const Social = ({ href, children }: SocialPropsType) => {
 const SocialLink = styled.a`
   display: inline-block;
   & + a {
-    padding-left: 20px;
+    margin-left: 20px;
   }
-  &:hover {
-    transform: scale(1.5);
-    transition: 0.1s;
+  @media screen and (min-width: 768px) {
+    &:hover {
+      transform: scale(1.5);
+      transition: 0.1s;
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &:active {
+      transform: scale(1.5);
+      transition: 0.1s;
+    }
   }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { initialState } from "../../features/initialState";
 import { useState } from "react";
 import { theme } from "../../styles/Theme";
+import { Logo } from "../logo/Logo";
 
 const menubarData = initialState.menubar;
 
@@ -47,9 +48,9 @@ const BurgerMenuStyled = styled.div`
     ul {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
       background: rgb(22, 29, 42, 0.9);
-      padding: 20px;
+      padding: 30px;
       border-radius: 8px;
     }
 

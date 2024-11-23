@@ -11,6 +11,12 @@ export const Logo = () => {
 };
 
 const StyledLogo = styled.a`
+  width: 150px;
+  height: 40px;
+  a {
+    width: 100%;
+    height: 100%;
+  }
   @media ${theme.media.tablet} {
     position: absolute;
     top: 20px;
