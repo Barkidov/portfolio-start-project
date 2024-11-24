@@ -45,16 +45,26 @@ const StyledMain = styled.section`
   }
 
 @media ${theme.media.tablet} {
-  padding-top: 50px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  div:nth-child(1) {
-    padding-top: 30px;
+  div:first-child {
+    padding-top: 0px;
     text-align: center
-  } // почему я достучался к этому чайлду как к 1-ому хотя он 3-й по сути чайлд
+  } // почему я достучался к этому чайлду как к 1-ому хотя он 3-й
+  
 }
+@media ${theme.media.mobile} {
+  padding-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div:first-child {
+    text-align: center
+  }}
 `;
 
 
