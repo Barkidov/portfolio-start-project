@@ -45,14 +45,15 @@ const StyledMain = styled.section`
   }
 
 @media ${theme.media.tablet} {
-  padding-top: 10px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   div:nth-child(1) {
     padding-top: 30px;
-  }
+    text-align: center
+  } // почему я достучался к этому чайлду как к 1-ому хотя он 3-й по сути чайлд
 }
 `;
 
@@ -66,6 +67,19 @@ const ImageWrapper = styled.div`
   height: 456px;
   border-radius: 55px 0px;
   background: linear-gradient(to right, #202d7a 66.67%, #3f1d69 100%);
+
+  @media ${theme.media.tablet} {
+    margin-top: 20px;
+    width: 306px;
+    height: 386px;
+  }
+
+  img {
+    @media ${theme.media.tablet} {
+    width: 302px;
+    height: 382px;
+  }
+  }
 `;
 
 const Hand = styled.span`

@@ -127,7 +127,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
   @media ${theme.media.tablet} {
     position: absolute;
-    top: 20px;
+    top: 28px;
     right: 20px;
   }
 
