@@ -11,7 +11,7 @@ export const theme = {
   },
 
   media: {
-    notebook: 'screen and (max-width: 900px)',
+    notebook: 'screen and (max-width: 905px)',
     tablet: 'screen and (max-width: 800px)',
     mobile: 'screen and (max-width: 576px)',
   }
