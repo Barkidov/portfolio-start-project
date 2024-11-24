@@ -65,7 +65,7 @@ const StyledForm = styled.form`
 const Field = styled.input`
   font-family: "Poppins", "sans serif";
   width: 100%;
-  font-size: 16px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;

@@ -18,13 +18,13 @@ const StyledFooter = styled.footer`
 `;
 
 const ContactNumber = styled.a`
-  font-size: 20px;
+  font-size: 1rem;
   padding-right: 30px;
   font-family: Poppins;
 `;
 
 const Email = styled.a`
-  font-size: 20px;
+  font-size: 1rem;
   padding-left: 30px;
   font-family: Poppins;
 `;

@@ -30,7 +30,7 @@ const StyledNav = styled.nav`
   a {
     text-decoration: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 34px;
     text-align: left;

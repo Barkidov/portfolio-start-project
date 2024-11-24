@@ -45,7 +45,7 @@ const StyledSkill = styled.div`
 `;
 
 const SkillTittle = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 auto;
   padding: 20px 0 20px
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { initialState } from "../../features/initialState";
 import { useState } from "react";
 import { theme } from "../../styles/Theme";
-import { Logo } from "../logo/Logo";
 
 const menubarData = initialState.menubar;
 
@@ -20,7 +19,7 @@ export const BurgerMenu = () => {
         <span />
         <span />
       </BurgerButton>
-      <BurgerMenuStyled>
+      <BurgerMenuStyled isOpen={isOpen}>
         {isOpen && (
           <ul>
             {menubarData.map((menuItem) => {
@@ -37,13 +36,14 @@ export const BurgerMenu = () => {
   );
 };
 
-const BurgerMenuStyled = styled.div`
+const BurgerMenuStyled = styled.div<{ isOpen: boolean }>`
   @media ${theme.media.tablet} {
     position: absolute;
     text-align: center;
     top: 70px;
     right: 0px;
     left: 0px;
+    border-bottom: ${({isOpen}) => isOpen ? '1px solid white': 'none'};
 
     ul {
       display: flex;
@@ -58,7 +58,7 @@ const BurgerMenuStyled = styled.div`
       position: relative;
       text-decoration: none;
       cursor: pointer;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 500;
       text-align: left;
       color: ${theme.colors.textColor};
@@ -90,7 +90,7 @@ const BurgerMenuStyled = styled.div`
   }
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 801px) {
     display: none;
   }
 `;
@@ -143,7 +143,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     right: 50px;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 801px) {
     display: none;
   }
 `;

@@ -22,7 +22,7 @@ export const Work = (props: WorkPropsType) => {
         alt="Первый проект"
       />
       <Title>{props.title}</Title>
-      <Text padding={"20px"} fontSize={"20px"}>
+      <Text padding={"20px"}>
         {props.text}
       </Text>
       <Link href={props.href}>Проект</Link>
