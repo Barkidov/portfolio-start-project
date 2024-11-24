@@ -17,6 +17,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsTyre>`
   font-weight: ${(props) => props.fontWeight || "500"};
 
   @media ${theme.media.tablet} {
-    padding: 50px 0 50px 0
+    padding: 50px 0 50px 0;
+    font-size: 1.5rem;
   }
 `;

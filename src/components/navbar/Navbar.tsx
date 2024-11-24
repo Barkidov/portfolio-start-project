@@ -25,6 +25,10 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     gap: 70px;
+
+    @media ${theme.media.notebook} {
+      gap: 35px;
+    }
   }
 
   a {
