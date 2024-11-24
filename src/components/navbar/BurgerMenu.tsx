@@ -82,6 +82,12 @@ const BurgerMenuStyled = styled.div`
         width: 100%;
       }
     }
+
+    
+  @media ${theme.media.mobile} {
+    position: absolute;
+    top: 130px;
+  }
   }
   
   @media screen and (min-width: 768px) {
@@ -129,6 +135,12 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: absolute;
     top: 28px;
     right: 20px;
+  }
+
+  @media ${theme.media.mobile} {
+    position: absolute;
+    top: 50px;
+    right: 50px;
   }
 
   @media screen and (min-width: 769px) {

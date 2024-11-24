@@ -23,7 +23,13 @@ export const Socials = () => {
 const SocialsStyled = styled.div`
   @media ${theme.media.tablet} {
     position: absolute;
-    top: 100px;
+    top: 20px;
+    left: 200px;
+  }
+
+  @media ${theme.media.mobile} {
+    position: absolute;
+    top: 75px;
     left: 10px;
   }
 `;

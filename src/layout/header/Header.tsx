@@ -37,4 +37,8 @@ const StyledNavbar = styled.header`
     height: 100%;
     padding: 10px 0 5px;
   }
+
+  @media ${theme.media.mobile} {
+    height: 130px
+  }
 `;
