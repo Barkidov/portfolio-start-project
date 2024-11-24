@@ -3,12 +3,13 @@ import photo from "../../../assets/images/photoOrigin.webp";
 import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Image } from "../../../components/Image";
+import { theme } from "../../../styles/Theme";
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper justify={"space-evenly"}>
+        <FlexWrapper justify={"space-evenly"} wrap={'wrap'}>
           <FlexWrapper direction={"column"} padding={"200px 0px 0px 0px"}>
             <span>
               <Hand>👋</Hand> Всем привет!
@@ -43,17 +44,16 @@ const StyledMain = styled.section`
     font-size: 1.2rem;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 666px;
-    height: 666px;
-    /* background-color: red; */
-    background-image: url("../../../assets/images/drawing.png");
-    z-index: -1;
+@media ${theme.media.tablet} {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div:nth-child(1) {
+    padding-top: 30px;
   }
+}
 `;
 
 

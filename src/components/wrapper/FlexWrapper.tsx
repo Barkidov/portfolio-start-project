@@ -26,4 +26,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   margin: ${(props) => props.margin || "undefined"};
   width: ${(props) => props.width || "undefined"};
   height: ${(props) => props.height || "undefined"};
+
 `;

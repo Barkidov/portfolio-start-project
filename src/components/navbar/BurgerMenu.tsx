@@ -131,7 +131,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     right: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
 `;
