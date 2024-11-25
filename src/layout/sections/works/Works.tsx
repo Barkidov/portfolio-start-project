@@ -1,15 +1,15 @@
-import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { Work } from "./work/Work";
 import { Container } from "../../../components/Container";
 import { initialState } from "../../../features/initialState";
+import { S } from "./Works_Styles";
 
 const worksData = initialState.works;
 
-export const Works = () => {
+export const Works: React.FC = () => {
   return (
-    <StyledWorks id="works">
+    <S.Works id="works">
       <Container>
         <SectionTitle textAlign={"center"} padding={"100px 0px 100px"}>
           Мои проекты
@@ -28,13 +28,6 @@ export const Works = () => {
           })}
         </FlexWrapper>
       </Container>
-    </StyledWorks>
+    </S.Works>
   );
 };
-
-const StyledWorks = styled.section`
-  min-height: 1400px;
-  top: 800px;
-  gap: 0px;
-  border: 1px 0px 0px 0px;
-`;

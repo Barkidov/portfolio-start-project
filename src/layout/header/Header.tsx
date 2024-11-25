@@ -1,15 +1,14 @@
-import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
 import { Navbar } from "../../components/navbar/Navbar";
-import { theme } from "../../styles/Theme";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/wrapper/FlexWrapper";
-import { Socials } from "../../components/social/Socials";
-import { BurgerMenu } from "../../components/navbar/BurgerMenu";
+import { Socials } from "../../components/socials/Socials";
+import { BurgerMenu } from "../../components/navbar/burgerMenu/BurgerMenu";
+import { S } from "./Header_Styles";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
-    <StyledNavbar>
+    <S.Header>
       <Container>
         <FlexWrapper justify={"space-around"}>
           <Logo />
@@ -18,27 +17,8 @@ export const Header = () => {
           <BurgerMenu />
         </FlexWrapper>
       </Container>
-    </StyledNavbar>
+    </S.Header>
   );
 };
 
-const StyledNavbar = styled.header`
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9;
 
-  div:first-child {
-    background-color: ${theme.colors.secondaryBg};
-    height: 100%;
-    padding: 10px 0 5px;
-  }
-
-  @media ${theme.media.mobile} {
-    height: 130px
-  }
-`;

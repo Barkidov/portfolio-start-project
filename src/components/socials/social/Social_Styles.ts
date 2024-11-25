@@ -1,18 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../styles/Theme";
-
-type SocialPropsType = {
-  href?: string;
-  children?: React.ReactNode;
-};
-
-export const Social = ({ href, children }: SocialPropsType) => {
-  return (
-    <SocialLink href={href} target="_blank">
-      {children}
-    </SocialLink>
-  );
-};
+import { theme } from "../../../styles/Theme";
 
 const SocialLink = styled.a`
   display: inline-block;
@@ -33,3 +20,7 @@ const SocialLink = styled.a`
     }
   }
 `;
+
+export const S = {
+    SocialLink
+}

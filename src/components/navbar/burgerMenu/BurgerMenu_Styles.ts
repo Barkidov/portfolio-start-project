@@ -1,42 +1,7 @@
 import styled from "styled-components";
-import { initialState } from "../../features/initialState";
-import { useState } from "react";
-import { theme } from "../../styles/Theme";
+import { theme } from "../../../styles/Theme";
 
-const menubarData = initialState.menubar;
-
-export const BurgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleBurgerMenuOpen = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <>
-      <BurgerButton onClick={handleBurgerMenuOpen} isOpen={isOpen}>
-        <span />
-        <span />
-        <span />
-      </BurgerButton>
-      <BurgerMenuStyled isOpen={isOpen}>
-        {isOpen && (
-          <ul>
-            {menubarData.map((menuItem) => {
-              return (
-                <li key={menuItem.id}>
-                  <a href={menuItem.href}>{menuItem.name}</a>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </BurgerMenuStyled>
-    </>
-  );
-};
-
-const BurgerMenuStyled = styled.div<{ isOpen: boolean }>`
+const BurgerMenu = styled.nav<{ isOpen: boolean }>`
   @media ${theme.media.tablet} {
     position: absolute;
     text-align: center;
@@ -84,10 +49,10 @@ const BurgerMenuStyled = styled.div<{ isOpen: boolean }>`
     }
 
     
-  @media ${theme.media.mobile} {
+  /* @media ${theme.media.mobile} {
     position: absolute;
     top: 130px;
-  }
+  } */
   }
   
   @media screen and (min-width: 801px) {
@@ -133,17 +98,22 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
   @media ${theme.media.tablet} {
     position: absolute;
-    top: 28px;
+    top: 25px;
     right: 20px;
   }
 
-  @media ${theme.media.mobile} {
+  /* @media ${theme.media.mobile} {
     position: absolute;
     top: 50px;
     right: 50px;
-  }
+  } */
 
   @media screen and (min-width: 801px) {
     display: none;
   }
 `;
+
+export const S = {
+    BurgerMenu,
+    BurgerButton
+}

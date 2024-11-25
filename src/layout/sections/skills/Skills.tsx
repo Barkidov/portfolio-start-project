@@ -1,16 +1,15 @@
-import styled from "styled-components";
 import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
-import { theme } from "../../../styles/Theme";
 import { Container } from "../../../components/Container";
 import { initialState } from "../../../features/initialState";
+import { S } from "./Skills_Styles";
 
 const skillsData = initialState.skills;
 
-export const Skills = () => {
+export const Skills: React.FC = () => {
   return (
-    <StyleSkills id="skills">
+    <S.Skills id="skills">
       <Container>
         <SectionTitle textAlign={"center"} padding={"100px 0px 90px"}>
           Мои скиллы
@@ -28,17 +27,7 @@ export const Skills = () => {
           })}
         </FlexWrapper>
       </Container>
-    </StyleSkills>
+    </S.Skills>
   );
 };
 
-const StyleSkills = styled.section`
-  min-height: 1060px;
-  background-color: ${theme.colors.secondaryBg};
-
-  div > div {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-`;
