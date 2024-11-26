@@ -1,7 +1,8 @@
 import projFirst from "../assets/images/proj-1.webp";
 import projSecond from "../assets/images/proj-2.webp";
+import { AppState } from "../types/appState";
 
-export const initialState = {
+export const initialState: AppState = {
   menubar: [
     {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
@@ -97,13 +98,12 @@ export const initialState = {
     {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
       href: "https://web.telegram.org",
-      iconId: "telegram",   
+      iconId: "telegram",
     },
     {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
       href: "https://web.whatsapp.com",
-      iconId: "whatsapp",   
+      iconId: "whatsapp",
     },
-  ]
+  ],
 };
-
