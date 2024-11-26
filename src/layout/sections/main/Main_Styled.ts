@@ -40,6 +40,10 @@ const Main = styled.section`
     } */
   }
 
+  @media screen and (max-width: 380px) {
+    padding-top: 80px;
+  }
+
   /* @media ${theme.media.mobile} {
     padding-top: 10px;
     display: flex;
