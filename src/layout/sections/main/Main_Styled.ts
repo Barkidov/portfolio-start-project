@@ -30,30 +30,11 @@ const Main = styled.section`
 
   @media ${theme.media.tablet} {
     padding-top: 10px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-
-    div:first-child {
-      padding-top: 0px;
-      text-align: center;
-    } */
   }
 
   @media screen and (max-width: 380px) {
     padding-top: 80px;
   }
-
-  /* @media ${theme.media.mobile} {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    div:first-child {
-      text-align: center;
-    }
-  } */
 `;
 
 const ImageWrapper = styled.div`

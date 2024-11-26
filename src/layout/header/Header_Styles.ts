@@ -22,10 +22,6 @@ div:first-child {
     display: none;
   }
 }
-
-/* @media ${theme.media.mobile} {
-  height: 130px
-} */
 `;
 
 export const S = {

@@ -12,8 +12,6 @@ const Skill = styled.div`
     display: block;
     margin: 0 auto;
   }
-
-  
 `;
 
 const SkillTittle = styled.h3`
