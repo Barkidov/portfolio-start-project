@@ -66,6 +66,7 @@ export const initialState: AppState = {
       src: projFirst,
       text: "CSS-градиенты представлены типом данных , специальным типом , состоящим из последовательного перехода между двумя и более цветами.",
       href: "#",
+      type: "react",
     },
     {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
@@ -73,6 +74,7 @@ export const initialState: AppState = {
       src: projSecond,
       text: "CSS-градиенты представлены типом данных , специальным типом , состоящим из последовательного перехода между двумя и более цветами.",
       href: "#",
+      type: "react",
     },
     {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
@@ -80,6 +82,7 @@ export const initialState: AppState = {
       src: projFirst,
       text: "CSS-градиенты представлены типом данных , специальным типом , состоящим из последовательного перехода между двумя и более цветами.",
       href: "#",
+      type: "spa",
     },
     {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
@@ -87,6 +90,7 @@ export const initialState: AppState = {
       src: projSecond,
       text: "CSS-градиенты представлены типом данных , специальным типом , состоящим из последовательного перехода между двумя и более цветами.",
       href: "#",
+      type: "landing",
     },
   ],
   socials: [
@@ -104,6 +108,28 @@ export const initialState: AppState = {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
       href: "https://web.whatsapp.com",
       iconId: "whatsapp",
+    },
+  ],
+  tabsItems: [
+    {
+      title: "All",
+      type: "all",
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    },
+    {
+      title: "React",
+      type: "react",
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    },
+    {
+      title: "Landing page",
+      type: "landing",
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+    },
+    {
+      title: "SPA",
+      type: "spa",
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
     },
   ],
 };

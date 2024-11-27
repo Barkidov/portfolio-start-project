@@ -48,11 +48,6 @@ const BurgerMenu = styled.nav<{ isOpen: boolean }>`
       }
     }
 
-    
-  /* @media ${theme.media.mobile} {
-    position: absolute;
-    top: 130px;
-  } */
   }
   
   @media screen and (min-width: 801px) {
@@ -101,12 +96,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     top: 25px;
     right: 20px;
   }
-
-  /* @media ${theme.media.mobile} {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-  } */
 
   @media screen and (min-width: 801px) {
     display: none;

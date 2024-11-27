@@ -3,5 +3,6 @@ export interface Works {
     title: string,
     src: string,
     text: string,
-    href: string
+    href: string,
+    type: string
   }
