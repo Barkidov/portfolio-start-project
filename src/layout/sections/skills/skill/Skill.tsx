@@ -14,7 +14,7 @@ export const Skill: React.FC<SkillPropsType> = (props) => {
     <S.Skill>
       <Icon width={"200"} height={"200"} iconId={props.iconId} />
       <S.SkillTittle>{props.title}</S.SkillTittle>
-      <Text textAlign={"center"} lineHeight={"1.5"}>
+      <Text fontWeight={'300'} textAlign={"center"} lineHeight={"1.5"}>
         {props.text}
       </Text>
     </S.Skill>

@@ -11,6 +11,8 @@ type TextPropsType = {
   overflowWrap?: string;
   hyphens?: string;
   maxWidth?: string;
+  width?: string;
+
 };
 
 export const Text = styled.p<TextPropsType>`
@@ -23,4 +25,5 @@ export const Text = styled.p<TextPropsType>`
   overflow-wrap: ${(props) => props.overflowWrap || "undefined"};
   hyphens: ${(props) => props.hyphens || "undefined"};
   max-width: ${(props) => props.maxWidth || "undefined"};
+  width: ${(props) => props.maxWidth || "undefined"};
 `;

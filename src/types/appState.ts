@@ -3,6 +3,7 @@ import { Skills } from "./skills";
 import { Socials } from "./socials";
 import { Works } from "./works";
 import { TabsItems } from "./tabsItems";
+import { Reviews } from "./reviews";
 
 
 export interface AppState {
@@ -10,5 +11,6 @@ export interface AppState {
     skills: Skills[],
     works: Works[],
     socials: Socials[],
-    tabsItems: TabsItems[]
+    tabsItems: TabsItems[],
+    reviews: Reviews[]
   }

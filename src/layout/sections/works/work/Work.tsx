@@ -21,7 +21,7 @@ export const Work: React.FC<WorkPropsType> = (props) => {
         alt="Первый проект"
       />
       <S.Title>{props.title}</S.Title>
-      <Text padding={"20px"}>
+      <Text fontWeight={'300'} padding={"20px"}>
         {props.text}
       </Text>
       <S.Link href={props.href}>Проект</S.Link>

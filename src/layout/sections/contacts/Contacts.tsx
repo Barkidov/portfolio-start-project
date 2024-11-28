@@ -4,6 +4,7 @@ import { Container } from "../../../components/Container";
 import { S } from "./Contacts_Styles";
 import { Socials } from "../../../components/socials/Socials";
 import { theme } from "../../../styles/Theme";
+import { Slider } from "../../../components/slider/Slider";
 
 export const Contacts: React.FC = () => {
   return (
@@ -12,9 +13,13 @@ export const Contacts: React.FC = () => {
         <SectionTitle padding={"100px 0px 90px"} textAlign={"center"}>
           Контакты
         </SectionTitle>
-        
-        <FlexWrapper justify={"center"} direction={'column'} align={'center'} gap={'10px'}>
-          <Socials/>
+        <FlexWrapper
+          justify={"center"}
+          direction={"column"}
+          align={"center"}
+          gap={"10px"}
+        >
+          <Socials />
           <S.Form method="get">
             <S.Field id="name" name="name" placeholder="Name" required />
             <S.Field
@@ -36,9 +41,10 @@ export const Contacts: React.FC = () => {
             </FlexWrapper>
           </S.Form>
         </FlexWrapper>
+        <FlexWrapper justify={"center"}>
+          <Slider />
+        </FlexWrapper>
       </Container>
     </S.Contacts>
   );
 };
-
-
