@@ -3,6 +3,7 @@ import { FlexWrapper } from "../../../components/wrapper/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Image } from "../../../components/Image";
 import { S } from "./Main_Styled";
+import Typewriter from "typewriter-effect";
 
 export const Main: React.FC = () => {
   return (
@@ -18,7 +19,15 @@ export const Main: React.FC = () => {
               <br />
               <span>Я Frontend Developer</span>
             </h1>
-            <span>Преобразую идеи в современные и удобные решения!</span>
+            <Typewriter
+              options={{
+                strings: ["Преобразую идеи в современные и удобные решения!"],
+                autoStart: true,
+                loop: false,
+                delay: 20,
+                deleteSpeed: 20
+              }}
+            />
           </FlexWrapper>
           <S.ImageWrapper>
             <Image borderRadius={"55px 0px"} src={photo} alt="Моё фото" />
@@ -28,5 +37,3 @@ export const Main: React.FC = () => {
     </S.Main>
   );
 };
-
-
